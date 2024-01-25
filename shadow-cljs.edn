@@ -1,0 +1,13 @@
+{:dependencies []
+ :source-paths ["src/"]
+ :dev-http {3000 {:root "resources/public/"}}
+ :builds
+ {:app {:target :esm
+
+        :modules {:main {:init-fn app/init!}}
+
+        :build-hooks [(shadow.cljs.build-report/hook
+                       {:output-to "build-report.html"})]
+
+        :output-dir "resources/public/shadow-js/"
+        :asset-path "/shadow-js/"}}}
