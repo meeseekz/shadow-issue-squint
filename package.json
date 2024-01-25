@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "shadow-cljs": "2.26.7"
+  },
+  "dependencies": {
+    "@nextjournal/clojure-mode": "0.3.1"
+  }
+}
